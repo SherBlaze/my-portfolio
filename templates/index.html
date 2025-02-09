@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Sher</title>
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<div class="code-rain-container"></div>
+<body>
+
+<header class="modern-menu">
+  <div class="logo">Sher</div>
+  <nav class="menu-items">
+    <a href="#home">Home</a>
+    <a href="#about">About Me</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <!-- Гамбургер-иконка для мобильных устройств -->
+  <div class="hamburger-menu" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</header>
+
+<!-- Выпадающее меню для мобильных устройств -->
+<nav class="mobile-menu" id="mobileMenu">
+  <a href="#home" onclick="toggleMenu()">Home</a>
+  <a href="#about" onclick="toggleMenu()">About Me</a>
+  <a href="#projects" onclick="toggleMenu()">Projects</a>
+  <a href="#contact" onclick="toggleMenu()">Contact</a>
+</nav>
+
+    <section class="hero">
+        <h1>Hi i am Sher, Web Developer and Game Designer</h1>
+        <p>I develop stylish websites, web applications, and bots. I create projects from scratch — from idea to final result. Always paying attention to details, innovation, and user experience.</p>
+
+        <div class="hero-buttons">
+            <a href="#" class="btn btn-primary">Order Now →</a>
+            <a href="#" class="btn btn-secondary">Portfolio</a>
+        </div>
+
+    </section>
+<section id="projects">
+    <h2>My Projects</h2>
+    <div class="projects-container">
+        <div class="project animate">
+            <img src="static/images/project1.jpg" alt="Проект 1">
+            <h3>Project Name</h3>
+            <p>Short Project Description.</p>
+        </div>
+        <div class="project animate">
+            <img src="static/images/project2.jpg" alt="Проект 2">
+            <h3>Project Name</h3>
+            <p>Short Project Description.</p>
+        </div>
+        <div class="project animate">
+            <img src="static/images/project3.jpg" alt="Проект 3">
+            <h3>Project Name</h3>
+            <p>Short Project Description.</p>
+        </div>
+    </div>
+</section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am passionate about programming and developing games and websites.</p>
+    </section>
+
+    <section id="contact">
+    <h2>Contact Me</h2>
+    <div class="contact-links">
+        <a href="https://t.me/iprocode7" class="contact-icon" target="_blank">
+            <img src="static/icons/telegram.svg" alt="Telegram">
+        </a>
+        <a href="https://wa.me/+992929904290" class="contact-icon" target="_blank">
+            <img src="static/icons/whatsapp.svg" alt="WhatsApp">
+        </a>
+        <a href="https://www.facebook.com/твоя_ссылка" class="contact-icon" target="_blank">
+            <img src="static/icons/facebook.svg" alt="Facebook">
+        </a>
+    </div>
+    </section>
+
+    <script src="static/js/script.js"></script>
+
+<footer>
+    <p>© 2025 Sher. All rights reserved.</p>
+</footer>
+<!--<div class="code-effect">-->
+<!--    <pre>console.log("Hello, World!");</pre>-->
+<!--</div>-->
+
+<div class="code-rain">
+    <span>var x = 100;</span>
+    <span>let y = "Hello";</span>
+    <span>const z = [1, 2, 3];</span>
+</div>
+<script>
+  function toggleMenu() {
+    const mobileMenu = document.getElementById('mobileMenu');
+    // Если меню не отображается, показываем его, иначе скрываем
+    if (mobileMenu.style.display === "flex") {
+      mobileMenu.style.display = "none";
+    } else {
+      mobileMenu.style.display = "flex";
+    }
+  }
+</script>
+</body>
+</html>
